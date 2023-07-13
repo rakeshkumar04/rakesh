@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Simple Admin Dashboard</title>
+    <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    
+ 
+</head>
+<body>
+<header>
+  
+  <h1 class="display-3 text-center mt-3 mb-3">Rakesh Kumar</h1>
+  
+  <div class="navbar justify-content-center mt-3">
+    <ul class="nav nav-pills">
+  <li class="nav-item ml-2">
+    <a class="text-dark bg-warning nav-link active" aria-current="page" href="#myCarousel">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="text-dark nav-link" href="#pro">Projects</a>
+  </li>
+  <li class="nav-item">
+    <a class="text-dark nav-link" href="#abo">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="text-dark nav-link ">Contact</a>
+  </li>
+</ul>
+  </div>
+</header>
+
+<style>
+  .carousel-item{
+    position: relative;
+    background: #777;
+    
+    height:32rem;
+    color: white;
+  }
+  .container {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-bottom: 50px;
+  }
+.contactcard{
+  width: 18rem;
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 20px 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+  margin: 2rem;
+  margin-top: 80px;
+  border: 0.1rem solid black;
+}
+
+  input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input[type=submit]:hover {
+  background-color: grey;
+}
+
+.label{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+  .proh{
+  text-align: center;
+  color: black;
+}
+
+</style>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+    
+    
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active" data-interval="3000">
+      <div class="container">
+        <h1>Weather App</h1>
+        <p>An Amazing weather app with gorgeous web design</p>
+        <a href="#" class="btn btn-dark">Click To View</a>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="3000">
+      <div class="container">
+        <h1>Kolor</h1>
+        <p>An Amazing color app with gorgeous web design that generates palette and gradients</p>
+        <a href="#" class="btn btn-dark">Click To View</a>
+      </div>
+    </div>
+     <div class="carousel-item" data-interval="3000">
+      <div class="container">
+        <h1>Dashboard</h1>
+        <p>A Professional Dashboard design for a analytics application with minimal colors</p>
+        <a href="#" class="btn btn-dark">Click To View</a>
+      </div>
+    </div>
+      
+  </div>
+  
+  <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide-to="prev">
+    <span class="sr-only"></span><span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+    <a href="#myCarousel" class="carousel-control-next" role="button" data-slide-to="next">
+    <span class="sr-only"></span><span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+  
+</div>
+
+<div class="mt-4">
+    <h1 class="display-7 text-center mt-4 mb-4" id="abo">About Me</h1>
+
+    <p class="mt-3 mb-5 ml-5 mr-5 lead">Hi I'm <mark>Rakesh Kumar </mark>. Finding creative solutions 🚀  to problems is something I have always enjoyed  As a kid 🧒 I loved tinkering with things that were broken, figuring out how they worked, and fixing them again. When I finished high school 🧑‍🎓, I knew exactly what I wanted my career to be. I am on my way to finish my degree at <mark>Electronics and communication engineering </mark>🧑‍💻 undergraduate, where I have learned how to apply critical thinking and problem-solving strategies to today’s 🧠 complex problems.</p>
+  
+  
+</div>
+
+<div>
+  <h1 class="display-5 text-center mt-3 mb-3 text-white bg-dark" style="padding: 30px;" id="pro">Projects</h1>
+  
+  <div class="d-sm-flex justify-content-around flex-nowrap" style="padding: 2rem;">
+    
+    <div class="card m-3" style="width: 18rem;">
+  <img src="/20230525_170403.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Web Dashboard</h5>
+    <p class="card-text">An Professional web dashboard for a minimal application</p>
+    <a href="#" class="btn btn-warning text-dark">Click to view</a>
+  </div>
+</div>
+  
+  <div class="card m-3" style="width: 18rem;">
+    <img src="webapp.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Weather App</h5>
+      <p class="card-text">An amazing weather app with a professional functionality</p>
+      <a href="#" class="btn btn-warning text-dark">Click to view</a>
+    </div>
+  </div>
+  <div class="card m-3" style="width: 18rem;">
+    <img src="kolor.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kolors</h5>
+      <p class="card-text">A website that generates color palettes and gradients and also a chrome extension to pick image color.</p>
+      <a href="#" class="btn btn-warning text-dark">Click to view</a>
+    </div>
+  </div>
+
+  
+    
+    
+    
+  </div>
+</div>
+<center>
+<div class="contactcard">
+    <h1 class="proh">Contact Me</h1>
+    <form action="mailto: rakeshkumarrnew@gmail.com">
+    
+    <label for="Name" class="label">Name</label><br>
+    <input type="text" placeholder="Name"><br>
+    
+    <label for="Email" class="label">Email</label><br>
+    <input type="email" placeholder="Email">
+    <br>
+    <label for="Message" class="label">Message</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:5rem;"></textarea>
+<br>
+    <center><input type="submit" value="Submit"></center>
+
+    
+    </form>
+    
+    
+  </div>
+  </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        new Chartist.Line('#traffic-chart', {
+            labels: ['January', 'Februrary', 'March', 'April', 'May', 'June'],
+            series: [
+                [23000, 25000, 19000, 34000, 56000, 64000]
+            ]
+            }, {
+            low: 0,
+            showArea: true
+        });
+    </script>
+</body>
+</html>
